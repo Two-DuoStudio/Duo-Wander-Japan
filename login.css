@@ -14,7 +14,7 @@
   flex: 1;
   background: rgba(0, 0, 0, 0.);
   color: #fff;
-  padding: 100px 200px;
+  padding: 50px 50px;
   padding-bottom: 200px;
   display: flex;
   flex-direction: column;
@@ -22,43 +22,35 @@
 }
 .title {
   margin-bottom: 30px;
-  position: absolute;
   top: 30px;
   left: 50px;
   z-index: 10;
   color: white;
-  font-family: 'Playfair Display', serif;
 }
 
-.main-title {
-  font-size: 60px;
+.maintitle {
+  margin-left: -20px;
+  font-size: 150px;
   font-weight: 800;
-  text-transform: uppercase;
   letter-spacing: 4px;
-  color: white;
-  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  color:#1c2233 ;
 }
 
-.sub-title {
-  font-size: 20px;
-  color:white;
-  margin-top: -10px;
-  letter-spacing: 2px;
-  text-transform: capitalize;
-  font-family: 'Open Sans', sans-serif;
+.subtitle {
+  margin-left: px;
+  font-size: 80px;
+  color:#1c2233;
+  margin-top: -20px;
 }
-.left-text {
-  padding-left: 80px;
-  padding-top: 50px;
-}
-.left h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
+.welc{
+  font-size: 30px;
+  color: #1c2233;
 }
 .left p {
   font-size: 16px;
   max-width: 400px;
-  color: #ddd;
+  color:#1c2233;
+  font-weight: 600;
 }
 .right {
    height: 700px;
@@ -67,17 +59,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-right:300px;
-  padding-top: 100px;
+  padding-top: 70px;
+
 }
 .loginbox {
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
   padding: 50px;
-  border-radius: 12px;
+  border-radius: 5px;
   color: #fff;
   width: 420px;
   height: 500px;
+  position: absolute;
+  right: 300px;
 }
 .loginbox h2 {
   text-align: center;
@@ -100,6 +94,9 @@
   cursor: pointer;
   font-weight: 600;
   border: 2px solid white;
+}
+.media button i {
+  margin-right: 10px;
 }
 .loginbox p {
   text-align: center;
@@ -128,11 +125,16 @@
 .options label {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
+  white-space: nowrap;
+  line-height: 1; 
+  font-size:14px ;
 }
-.options a {
-  color: #bbb;
-  text-decoration: none;
+input[type="checkbox"] {
+  accent-color: #00c853; 
+}
+.pass{
+  color: #fff;
 }
 .signin-btn {
   width: 100%;
@@ -143,4 +145,10 @@
   color: white;
   font-size: 16px;
   cursor: pointer;
+}
+.p2{
+  color:#fff;
+}
+.sign1{
+  color: #fff;
 }
