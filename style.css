@@ -30,8 +30,10 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 16px 55px;
+    
 }
 
+/* logo */
 
 .logo{
     background-image: url(logoblack.png);
@@ -39,26 +41,60 @@ header{
     height: 150px;
     width: 150px;
     margin-left: -40px;
-    cursor: pointer;
+    opacity: 0;
+    transform: translate(-40px);
+    animation: logo-slide 500ms ease-in-out 200ms forwards, logo-mirrorx 600ms ease-in-out 610ms;
 }
+
+/* logo animation */
+
+@keyframes logo-mirrorx{
+    0%{
+        transform: scaleX(1);
+    }
+    50%{
+        transform: scaleX(-1);
+    }
+    100%{
+        transform: scaleX(1);
+    }
+}
+
+@keyframes logo-slide{
+    0%{
+        transform: translateX(-40px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* menu */
 
 .headerlinks{
     height: 30px;
     width: 65%;
     display: flex;
     justify-content: space-between;
+    
 }
 
 .headerlinks a{
     padding: 1.5px 0;
     cursor: pointer;
     position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: menu-slideup 400ms linear 200ms forwards;
 }
 
 .headerlinks a::after{
     content: '';
     position: absolute;
-    height: 1.6px;
+    height: 1.5px;
     width: 0;
     background-color: black;
     top: 100%;
@@ -73,6 +109,18 @@ header{
     left: 0;
 }
 
+
+@keyframes menu-slideup{
+    0%{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 /* Title / Header Content */
 
 .headcontent{
@@ -80,15 +128,49 @@ header{
     right: 5%;
     top: 47vh;
     color: white;
-    
+
 }
 
 .headcontent h1{
     font-size: 50px;
     line-height: 60px;
+    opacity: 0;
+    transform: translateX(30px);
+    animation: title-slide 650ms ease-in-out 800ms forwards;
 }
 
 .headcontent p{
     margin-bottom: 18px ;
+    opacity: 0;
+    transform: translateY(12px);
+    animation: subtitle-slideup 500ms linear 500ms forwards;
 }
 
+@keyframes subtitle-slideup{
+    0%{
+        transform: translateY(12px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes title-slide{
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* hero section animation */
+@keyframes herofade{
+    to{
+        opacity: 1;
+    }
+}
