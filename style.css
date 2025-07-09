@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'noto sans' ;
+}
+
+h1{
+    font-family: 'Noto Serif jp';
+}
+
+/* header & Background Image */
+
+header{
+    background-image: url(headerbg.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    font-size: 17px;
+}
+
+/* Navbar */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 55px;
+}
+
+
+.logo{
+    background-image: url(logoblack.png);
+    background-size: cover;
+    height: 150px;
+    width: 150px;
+    margin-left: -40px;
+    cursor: pointer;
+}
+
+.headerlinks{
+    height: 30px;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerlinks a{
+    padding: 1.5px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.headerlinks a::after{
+    content: '';
+    position: absolute;
+    height: 1.6px;
+    width: 0;
+    background-color: black;
+    top: 100%;
+    right: 0;
+    border-radius: 3px;
+    transition: 0.3s width;
+}
+
+.headerlinks a:hover::after{
+    width: 100%;
+    right: unset;
+    left: 0;
+}
+
+/* Title / Header Content */
+
+.headcontent{
+    position: absolute;
+    right: 5%;
+    top: 47vh;
+    color: white;
+    
+}
+
+.headcontent h1{
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.headcontent p{
+    margin-bottom: 18px ;
+}
+
