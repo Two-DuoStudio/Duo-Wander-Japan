@@ -172,19 +172,29 @@ header{
     }
 }
 
-/* hero section animation */
-@keyframes herofade{
-    to{
-        opacity: 1;
-    }
+/* Main section */
+
+main{
+    color: white;
 }
 
-/* Main section */
+
+/* welcome section */
+
+.welcome{
+    display: flex;
+    justify-content: center;
+    margin: 40px 0 60px 0;
+    font-size: 48px;
+    font-family: 'Cinzel';
+}
+
+/* blur section */
+
 .wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 80px;
 }
 
 .divider {
@@ -216,3 +226,4 @@ header{
     left: 37%;    
     font-weight: 500;
 }
+
