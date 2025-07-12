@@ -11,14 +11,7 @@ body {
 h1{
     font-family: 'Noto Serif jp';
 }
-p{
-<<<<<<< HEAD
-     font-family: 'noto sans';
-=======
-     font-family: 'Noto sans';
->>>>>>> dcac3284a44c0b559c50e573b431e8b0f7fb447a
-}
-/* header & Background Image */
+
 
 header{
     background-image: url(hereosection.jpeg);
