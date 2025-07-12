@@ -12,7 +12,7 @@ h1{
     font-family: 'Noto Serif jp';
 }
 p{
-     font-family: 'Noto Serif jp';
+     font-family: 'noto sans';
 }
 /* header & Background Image */
 
@@ -252,7 +252,7 @@ body {
 
 .section-line {
   border: none;
-  border-top: 1px solid #ffffff; 
+  border-top: 3px solid #4c4c4c; 
   width: 100%;
   margin-top: 50px;
 }
@@ -261,6 +261,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 58px;
+  flex-direction: column;
 }
 .img1{
     display: flex;
@@ -273,6 +274,7 @@ body {
     width:1400px ;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 .imgtext h1{
   position:relative;
@@ -296,4 +298,23 @@ body {
   font-weight: 500;   
    color: #FDCB58;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+.discr{
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  right: 40px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.dish1{
+    font-family:'Cinzel';;
+    font-size: 30px;
+    padding-left: 10px;
+    margin-bottom:10px ;
 }
