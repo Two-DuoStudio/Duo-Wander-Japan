@@ -11,7 +11,7 @@ body {
     font-size: 17px;
 }
 
-h1{
+h1 ,h2, h3, h4, h5, h6{
     font-family: 'Noto Serif jp';
 }
 
@@ -202,7 +202,7 @@ main{
     background-image: url("blurimg.jpg");
     background-size: cover;
     height: 400px;
-    width: 80vw;
+    width: 88vw;
 }
 
 .blurr{
@@ -231,6 +231,147 @@ main{
 /* section line */
 
 .section-line1{
-    margin-top: 200px;
+    margin-top: 120px;
+    border-style: none;
+    border-top:  3px solid #4c4c4c;
+    
+}
+
+/* category cards */
+
+.category{
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    column-gap: 16px;
+    row-gap: 100px;
+    padding: 0 88px;
+    margin-top: 50px;
+}
+
+
+.card1{
+    background-image: url('card1-index.jpg');
+    background-size: cover;
+    height: 530px;
+}
+
+.card2{
+    background-image: url('card2-index.jpg');
+    background-size: cover;
+}
+
+.card3{
+    background-image: url('card3-index.jpg');
+    background-size: cover;
+}
+
+.card4{
+    background-image: url('card4-index.jpg');
+    background-size: cover;
+}
+
+.card5{
+    background-image: url('card5-index.jpg');
+    background-size: cover;
+}
+
+.card6{
+    background-image: url('card6-index.jpg');
+    background-size: cover;
+}
+
+.card7{
+    background-image: url('card7-index.jpg');
+    background-size: cover;
+}
+
+.card8{
+    background-image: url('card8-index.webp');
+    background-size: cover;
+}
+
+.card9{
+    background-image: url('card9-index.jpg');
+    background-size: cover;
+}
+
+.card10{
+    background-image: url('card10-index.jpg');
+    background-size: cover;
+}
+
+.card11{
+    background-image: url('card11-index.png');
+    background-size: cover;
+}
+
+.card12{
+    background-image: url('card12-index.jpg');
+    background-size: cover;
+}
+
+/* each card styling */
+
+[class^="card"]{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+[class^="card"]::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    height: 35%;
+    width: 100%;
+    z-index: 1;
+    background : linear-gradient(to top, rgba(0,0,0,1), transparent);
+    backdrop-filter: blur(3px);
+}
+
+[class^="card"]:hover{
+    /* transform: scale(1.02); */
+    animation: cardanime 30ms  ease-in forwards;
+}
+
+[class^="card"]::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transition: background 0.2s ease;
+  z-index: 1;
+}
+
+[class^="card"]:hover::before{
+    background: rgba(0, 0, 0, 0.3);
+}
+
+
+/* @keyframes cardanime{
+    0%{transform: scale(1);}
+    100%{transform: scale(1.01);}
+} */
+
+[class^="card"] h2{
+    z-index: 5;
+    width: 100%;
+    padding-left: 10px;
+    color: #FAF3E0 ;
+}
+
+[class^="card"] span{
+    z-index: 5;
+    width: 100%;
+    margin-bottom: 18%;
+    margin-top: 5%;
+    font-size: 13px;
+    padding-left: 10px;
+    font-weight: 100;
+    color: #D1D1D1;
 }
 
