@@ -15,6 +15,10 @@ h1 ,h2, h3, h4, h5, h6{
     font-family: 'Noto Serif jp';
 }
 
+p{
+    font-family: 'Noto sans';
+}
+
 /* header & Background Image */
 
 header{
@@ -351,12 +355,6 @@ main{
     background: rgba(0, 0, 0, 0.3);
 }
 
-
-/* @keyframes cardanime{
-    0%{transform: scale(1);}
-    100%{transform: scale(1.01);}
-} */
-
 [class^="card"] h2{
     z-index: 5;
     width: 100%;
@@ -375,3 +373,149 @@ main{
     color: #D1D1D1;
 }
 
+.cards{
+    text-decoration: none;
+}
+
+/*footer*/
+/* Base footer styling */
+.site-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 100px 40px 60px;
+  font-family: 'Noto Serif JP', serif;
+}
+
+/* Container layout */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* Logo section */
+.footer-logo {
+  flex: 1 1 240px;
+  margin-bottom: 40px;
+}
+
+.footer-logo img {
+  width: 70px;
+}
+
+.footer-logo h3 {
+  margin: 15px 0 5px;
+  font-size: 22px;
+}
+
+.footer-logo p {
+  color: #ccc;
+}
+
+/* Generic footer column */
+.footer-section {
+  flex: 1 1 220px;
+  margin-bottom: 40px;
+}
+
+.footer-section h4 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+/* Footer list links */
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #ccc;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #fff;
+}
+
+/* Two-column layout for Our Story */
+.story-columns {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.story-columns li {
+  flex: 1 1 200px;
+  list-style: none;
+}
+
+.story-columns li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.story-columns li a:hover {
+  color: #fff;
+
+}
+
+/* Social icons */
+.social-icons {
+  margin-top: 25px;
+  font-size: 20px;
+}
+
+.social-icons a {
+  color: #ccc;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+/* Divider */
+.site-footer hr {
+  border-color: #333;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+/* Copyright */
+.site-footer .copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .story-columns {
+    column-count: 1;
+  }
+
+  .footer-logo,
+  .footer-section {
+    width: 100%;
+  }
+}
+.footer-bottom{
+  margin-left:600px ;
+  font-size: 13px;
+}
