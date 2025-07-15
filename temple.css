@@ -11,7 +11,9 @@ body {
 h1{
     font-family: 'Noto Serif jp';
 }
-
+p{
+    font-family: 'noto sans';
+}
 
 header{
     background-image: url(hereosection.jpeg);
@@ -212,6 +214,7 @@ body {
   border-radius: 3px;
   overflow: hidden; /* Clip the blur overflow */
   z-index: 2; /* Ensure it’s above lower layers */
+  margin-bottom: -70px;
 }
 
 /* Blurred background using ::before pseudo-element */
@@ -324,4 +327,188 @@ body {
     font-size: 30px;
     padding-left: 10px;
     margin-bottom:10px ;
+}
+.sacred1{
+    margin-bottom: 60px;
+    border: none;
+    border-top: 3px solid #4c4c4c; 
+    width: 100%;
+}
+.section1{
+    border: none;
+    border-top: 3px solid #4c4c4c; 
+    width: 100%;
+
+}
+/*footer*/
+.site-footer {
+  background-color:black;
+  color: #ffffffcc;
+  padding: 50px 20px 20px;
+  font-family: 'Noto Serif jp';
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: auto;
+  border-bottom: 1px solid #444;
+  padding-bottom: 30px;
+}
+
+.footer-brand {
+  flex: 1 1 250px;
+  margin-bottom: 20px;
+}
+
+.footer-brand img.footer-logo {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.footer-brand span {
+  font-size: 14px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+.footer-links {
+  flex: 1 1 200px;
+  margin-bottom: 20px;
+}
+
+.footer-links h4 {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+  color: #fff;
+}
+
+.footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-contact h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #555;
+  padding-bottom: 5px;
+}
+
+.footer-contact p {
+  margin: 8px 0;
+  color: #aaa;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 20px;
+  color: #888;
+}
+.footer-social {
+  margin-top: 10px;
+}
+
+.footer-social a {
+  color: #ccc;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #ffffff;
+}
+
+/*two card */
+.temple-card-section {
+  background-color: black;
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+.temple-card-section h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color:white;
+  font-family:'Noto Serif jp' ;
+}
+
+.temple-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.temple-card {
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.temple-card:hover {
+  transform: scale(1.1);
+}
+
+.temple-image {
+  width: 400px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end; /* aligns the text box to bottom */
+}
+
+.temple-bottom-bar {
+  width: 100%;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.5); /* light transparent black */
+  color: white;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.temple-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.temple-description {
+  font-size: 13px;
+  line-height: 1.4;
 }
