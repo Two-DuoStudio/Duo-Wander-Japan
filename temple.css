@@ -341,115 +341,149 @@ body {
 
 }
 /*footer*/
+/* Base footer styling */
 .site-footer {
-  background-color:black;
-  color: #ffffffcc;
-  padding: 50px 20px 20px;
-  font-family: 'Noto Serif jp';
+  background-color: #000;
+  color: #fff;
+  padding: 100px 40px 60px;
+  font-family: 'Noto Serif JP', serif;
 }
 
+/* Container layout */
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1300px;
-  margin: auto;
-  border-bottom: 1px solid #444;
-  padding-bottom: 30px;
+  margin: 0 auto;
 }
 
-.footer-brand {
-  flex: 1 1 250px;
-  margin-bottom: 20px;
+/* Logo section */
+.footer-logo {
+  flex: 1 1 240px;
+  margin-bottom: 40px;
 }
 
-.footer-brand img.footer-logo {
+.footer-logo img {
   width: 70px;
-  margin-bottom: 10px;
 }
 
-.footer-brand p {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.4;
+.footer-logo h3 {
+  margin: 15px 0 5px;
+  font-size: 22px;
 }
 
-.footer-brand span {
-  font-size: 14px;
-  font-weight: normal;
-  color: #aaa;
+.footer-logo p {
+  color: #ccc;
 }
 
-.footer-links {
-  flex: 1 1 200px;
-  margin-bottom: 20px;
+/* Generic footer column */
+.footer-section {
+  flex: 1 1 220px;
+  margin-bottom: 40px;
 }
 
-.footer-links h4 {
-  font-size: 16px;
-  color: #ffffff;
+.footer-section h4 {
   margin-bottom: 15px;
-  border-bottom: 1px solid #555;
-  padding-bottom: 5px;
+  font-size: 18px;
 }
 
-.footer-links ul {
+/* Footer list links */
+.footer-section ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  color: #ccc;
 }
 
-.footer-links ul li {
+.footer-section ul li {
   margin-bottom: 10px;
 }
 
-.footer-links ul li a {
-  color: #aaa;
+.footer-section ul li a {
+  color: #ccc;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.footer-links ul li a:hover {
+.footer-section ul li a:hover {
   color: #fff;
 }
 
-.footer-contact {
-  flex: 1 1 250px;
+/* Two-column layout for Our Story */
+.story-columns {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
-.footer-contact h4 {
-  font-size: 16px;
-  margin-bottom: 15px;
-  border-bottom: 1px solid #555;
-  padding-bottom: 5px;
+.story-columns li {
+  flex: 1 1 200px;
+  list-style: none;
 }
 
-.footer-contact p {
-  margin: 8px 0;
-  color: #aaa;
-}
-
-.footer-bottom {
-  text-align: center;
-  font-size: 14px;
-  padding-top: 20px;
-  color: #888;
-}
-.footer-social {
-  margin-top: 10px;
-}
-
-.footer-social a {
+.story-columns li a {
   color: #ccc;
+  text-decoration: none;
+}
+
+.story-columns li a:hover {
+  color: #fff;
+
+}
+
+/* Social icons */
+.social-icons {
+  margin-top: 25px;
   font-size: 20px;
+}
+
+.social-icons a {
+  color: #ccc;
   margin-right: 15px;
   transition: color 0.3s ease;
 }
 
-.footer-social a:hover {
-  color: #ffffff;
+.social-icons a:hover {
+  color: #fff;
 }
 
-/*two card */
+/* Divider */
+.site-footer hr {
+  border-color: #333;
+  margin: 40px auto;
+  max-width: 1200px;
+}
+
+/* Copyright */
+.site-footer .copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .story-columns {
+    column-count: 1;
+  }
+
+  .footer-logo,
+  .footer-section {
+    width: 100%;
+  }
+}
+.footer-bottom{
+  margin-left:600px ;
+  font-size: 13px;
+}
+
+/*card section */
 .temple-card-section {
   background-color: black;
   padding: 60px 20px 40px;
@@ -457,10 +491,10 @@ body {
 }
 
 .temple-card-section h2 {
-  font-size: 32px;
-  margin-bottom: 40px;
-  color:white;
-  font-family:'Noto Serif jp' ;
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Noto Serif JP', serif;
 }
 
 .temple-card-wrapper {
@@ -471,44 +505,50 @@ body {
 }
 
 .temple-card {
-  width: 400px;
-  height: 600px;
+  width: 300px;
+  height: 400px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  margin: 20px;
   transition: transform 0.3s ease;
+  position: relative;
 }
 
 .temple-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 .temple-image {
-  width: 400px;
-  height: 600px;
+  width: 100%;
+  height: 100%;
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
-  align-items: flex-end; /* aligns the text box to bottom */
+  align-items: flex-end;
 }
 
+/* This is the black overlay box with a slight gradient */
 .temple-bottom-bar {
   width: 100%;
-  padding: 15px;
-  background-color: rgba(0, 0, 0, 0.5); /* light transparent black */
+  padding: 15px 15px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
   color: white;
   text-align: center;
-  font-family: 'Segoe UI', sans-serif;
+  position: absolute;
+  bottom: 0;
 }
 
-.temple-name {
-  font-weight: bold;
-  font-size: 16px;
-  margin-bottom: 5px;
+/* Title font */
+.cardb1 {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 20px;
+  margin-bottom: 8px;
 }
 
+/* Description font */
 .temple-description {
   font-size: 13px;
   line-height: 1.4;
+  font-family: 'Noto Sans';
+  margin: 0;
 }
