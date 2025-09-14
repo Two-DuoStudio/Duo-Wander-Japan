@@ -190,9 +190,11 @@ main{
     justify-content: center;
     margin: 40px 0 60px 0;
     font-size: 48px;
-    font-family: 'Cinzel';
 }
 
+.welcome p{
+    font-family: 'Cinzel';
+}
 
 /* blur section */
 
