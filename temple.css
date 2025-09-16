@@ -15,8 +15,21 @@ p{
     font-family: 'noto sans';
 }
 
+/* temple - hero section */
+
 header{
     background-image: url(hereosection.jpeg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    font-size: 17px;
+}
+
+/* shrine - hero section */
+
+.shrineherosection{
+    background-image: url(shrine1herosection.jpg);
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -224,7 +237,7 @@ body {
   left: 0;
   height: 400px;
   width: 88vw;
-  background-image: url("blur section.png");
+  background-image: url("shrineblursection.jpg");
   background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */
@@ -256,7 +269,7 @@ body {
   font-family: 'noto sans' ;
   font-size: 29px;
   /* font-weight: 500; */
-  transform: translateX(195px); /* Move text slightly right */
+  transform: translateX(160px); /* Move text slightly right */
 }
 
 .section-line {
