@@ -1,0 +1,59 @@
+body {
+    font-family: 'noto sans';
+    background-color: black;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+    font-size: 17px;
+    background-image:url(hereosection.jpeg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-size: cover;
+     background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.info1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 58px 0px 58px;
+  flex-direction: column;
+}
+.img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url(caed1jpeg);
+    background-size: cover;
+    height: 660px;
+    width:1400px ;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+.discr{
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  color: #fff;
+  width: 1450px;
+  height: 680px;
+  position: absolute;
+ bottom: 25px;
+ top: 5px;
+
+}
+.dish1{
+    text-align: center;
+    font-family:'Cinzel';;
+    font-size: 30px;
+    padding-left: 10px;
+    margin-bottom:10px ;
+}
+
+.disp{
+  line-height: 40px;
+  text-align: center;
+}
