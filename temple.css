@@ -230,6 +230,35 @@ body {
   z-index: 2; /* Ensure it’s above lower layers */
   margin-bottom: -70px;
 }
+/*shriens blur image*/
+.shriensimg{
+  height: 500px;
+  width: 88vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  overflow: hidden; /* Clip the blur overflow */
+  z-index: 2; /* Ensure it’s above lower layers */
+  margin-bottom: -70px;
+}
+
+
+.shriensimg::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 88vw;
+  background-image: url('shrineblursection.jpg');
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  filter: blur(8px);  /* Apply blur effect */
+  z-index: 1; /* Send behind the text */
+}
 
 /* Blurred background using ::before pseudo-element */
 .tempimg::before {
@@ -239,7 +268,7 @@ body {
   left: 0;
   height: 400px;
   width: 88vw;
-  background-image: url("shrineblursection.jpg");
+  background-image: url("blur section.png");
   background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */
