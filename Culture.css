@@ -3,9 +3,9 @@ body {
     background-color: black;
     overflow-x: hidden;  /* Prevent horizontal scroll */
     font-size: 17px;
-    background-image:url(hereosection.jpeg);
+    background-image:url(tradition.webp);
     display: flex;
-    align-items: center;
+    align-items:start;
     justify-content: center;
     overflow: hidden;
     background-size: cover;
