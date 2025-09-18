@@ -48,6 +48,17 @@ header{
     font-size: 17px;
 }
 
+/* Festival - hero section */
+
+.festivalherosection{
+    background-image: url(festivalherosection.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    font-size: 17px;
+}
+
 /* Navbar */
 
 .navbar{
@@ -254,7 +265,7 @@ body {
   z-index: 2; /* Ensure it’s above lower layers */
   margin-bottom: -70px;
 }
-
+/* shrine blur section */
 
 .shriensimg::before {
   content: '';
@@ -271,6 +282,8 @@ body {
   z-index: 1; /* Send behind the text */
 }
 
+
+
 /* Blurred background using ::before pseudo-element */
 .tempimg::before {
   content: '';
@@ -286,6 +299,39 @@ body {
   filter: blur(8px);  /* Apply blur effect */
   z-index: 1; /* Send behind the text */
 }
+
+/* season blur section */
+.seasonblursection::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 88vw;
+    background-image: url('seasonblursection.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    filter: blur(8px);  /* Apply blur effect */
+    z-index: 1; /* Send behind the text */
+}
+
+/* festival blur section */
+.festivalblursection::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 88vw;
+    background-image: url('festivalblursection.jpeg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    filter: blur(8px);  /* Apply blur effect */
+    z-index: 1; /* Send behind the text */
+}
+
 
 /* === Text Overlay on Top of Blur === */
 .text-overlay {
@@ -319,6 +365,13 @@ body {
     font-size: 29px;
     /* font-weight: 500; */
     transform: translateX(170px); /* Move text slightly right */
+}
+
+.festivaltemp2 {
+  font-family: 'noto sans' ;
+  font-size: 29px;
+  /* font-weight: 500; */
+  transform: translateX(170px); /* Move text slightly right */
 }
 
 .section-line {
@@ -420,15 +473,45 @@ body {
 /* shrine card 2 image text */
 
 .imgtextshrine2 p{
-  position:relative;
-  bottom: -180px;
-  left:-495px;
-  font-family: 'noto sans' ;
-  font-size: 40px;
-  font-weight: 500;   
-  color: #FDCB58;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    position:relative;
+    bottom: -180px;
+    left:-495px;
+    font-family: 'noto sans' ;
+    font-size: 40px;
+    font-weight: 500;   
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
+
+/* season card 1 image text */
+.seasonimgtext1 h1{
+    position:relative;
+    bottom:-210px;
+    left: -540px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+/* season card 2 image text */
+
+.seasonimgtext2 h1{
+    position:relative;
+    bottom:-210px;
+    left: -560px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+}
+
 
 .imgtextshrine5 p{
   position:relative;
