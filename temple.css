@@ -59,6 +59,17 @@ header{
     font-size: 17px;
 }
 
+/* Mountain - hero section */
+
+.mountainherosection{
+    background-image: url(mountainherosection.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    font-size: 17px;
+}
+
 /* Navbar */
 
 .navbar{
@@ -329,6 +340,21 @@ body {
     z-index: 1; /* Send behind the text */
 }
 
+/* Mountain blur section */
+.mountainblursection::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 88vw;
+    background-image: url('mountainblursection.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    filter: blur(8px);  /* Apply blur effect */
+    z-index: 1; /* Send behind the text */
+}
 
 /* === Text Overlay on Top of Blur === */
 .text-overlay {
@@ -369,6 +395,14 @@ body {
   font-size: 29px;
   /* font-weight: 500; */
   transform: translateX(170px); /* Move text slightly right */
+}
+
+/* mountain temp2 */
+.mountaintemp2{
+  font-family: 'noto sans' ;
+  font-size: 29px;
+  /* font-weight: 500; */
+  transform: translateX(150px); /* Move text slightly right */
 }
 
 .section-line {
