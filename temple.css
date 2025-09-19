@@ -70,6 +70,16 @@ header{
     font-size: 17px;
 }
 
+/* Castle - hero section */
+.castleherosection{
+    background-image: url(castleherosection5.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    font-size: 17px;
+}
+
 /* Navbar */
 
 .navbar{
@@ -356,6 +366,39 @@ body {
     z-index: 1; /* Send behind the text */
 }
 
+/* castle blur section */
+
+.mountainblursection::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 88vw;
+    background-image: url('mountainblursection.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    filter: blur(8px);  /* Apply blur effect */
+    z-index: 1; /* Send behind the text */
+}
+
+/* castle blur section */
+.castleblursection::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 88vw;
+    background-image: url('castleblursection.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    filter: blur(8px);  /* Apply blur effect */
+    z-index: 1; /* Send behind the text */
+}
+
 /* === Text Overlay on Top of Blur === */
 .text-overlay {
   position: relative;
@@ -613,6 +656,152 @@ body {
     bottom:-210px;
     left: -400px;
     font-size: 23px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* image text mountain  */
+.mountainimgtext1 h1{
+    position:relative;
+    bottom:-210px;
+    left: -490px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mountainimgtext1 p{
+    position:relative;
+    bottom:-210px;
+    left: -485px;
+    font-size: 40px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mountainimgtext2 h1{
+    position:relative;
+    bottom:-210px;
+    left: -460px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mountainimgtext2 p{
+    position:relative;
+    bottom:-210px;
+    left: -455px;
+    font-size: 35px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mountainimgtext3 h1{
+    position:relative;
+    bottom:-210px;
+    left: -430px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mountainimgtext3 p{
+    position:relative;
+    bottom:-210px;
+    left: -425px;
+    font-size: 35px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mountainimgtext4 h1{
+    position:relative;
+    bottom:-210px;
+    left: -460px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mountainimgtext4 p{
+    position:relative;
+    bottom:-210px;
+    left: -460px;
+    font-size: 35px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mountainimgtext5 h1{
+    position:relative;
+    bottom:-210px;
+    left: -460px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mountainimgtext5 p{
+    position:relative;
+    bottom:-210px;
+    left: -455px;
+    font-size: 35px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* mountain text image */
+.castleimgtext1 h1{
+    position:relative;
+    bottom:-210px;
+    left: -385px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.castleimgtext6 h1{
+    position:relative;
+    bottom:-210px;
+    left: -385px;
+    font-size: 65px;
     font-family: 'Noto Serif JP';
     margin-bottom: 12px;
     letter-spacing: 1px;
