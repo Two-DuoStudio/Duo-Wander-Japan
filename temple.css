@@ -80,6 +80,64 @@ header{
     font-size: 17px;
 }
 
+/* street - hero section */
+.streetherosection{
+    background-image: url(streetherosection4.jpeg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    font-size: 17px;
+}
+
+.villageherosection{
+  background-image: url(villageherosection.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    font-size: 17px;
+}
+
+/* onsen hero section */
+
+.onsenherosection{
+  background-image: url(onsenherosection3.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    font-size: 17px;
+}
+
+.samuraiherosection{
+  background-image: url(samuraiherosection.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    font-size: 17px;
+}
+
+.historyherosection{
+  background-image: url(historyherosection.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    font-size: 17px;
+}
+
+.mythherosection{
+  background-image: url(mythherosection1.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    color: black;
+    font-size: 17px;
+}
+
+
 /* Navbar */
 
 .navbar{
@@ -399,6 +457,99 @@ body {
     z-index: 1; /* Send behind the text */
 }
 
+/* street blur section */
+.streetblurimg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 88vw;
+    background-image: url('streetblursection.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    filter: blur(8px);  /* Apply blur effect */
+    z-index: 1; /* Send behind the text */
+}
+
+/* Village hero section */
+.villageblursection::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 88vw;
+    background-image: url('villageblursection.jpeg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    filter: blur(8px);  /* Apply blur effect */
+    z-index: 1; /* Send behind the text */
+}
+
+.onsenblursection::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 88vw;
+    background-image: url('villageblursection.jpeg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    filter: blur(8px);  /* Apply blur effect */
+    z-index: 1; /* Send behind the text */
+}
+
+.samuraiblursection::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 88vw;
+    background-image: url('samuraiblursection.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    filter: blur(8px);  /* Apply blur effect */
+    z-index: 1; /* Send behind the text */
+}
+
+.historyblursection::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 88vw;
+    background-image: url('historyblursection.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    filter: blur(8px);  /* Apply blur effect */
+    z-index: 1; /* Send behind the text */
+}
+
+.mythblursection::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 400px;
+    width: 88vw;
+    background-image: url('mythblursection.jpg');
+    background-size: cover;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    filter: blur(8px);  /* Apply blur effect */
+    z-index: 1; /* Send behind the text */
+}
+
+
 /* === Text Overlay on Top of Blur === */
 .text-overlay {
   position: relative;
@@ -446,6 +597,22 @@ body {
   font-size: 29px;
   /* font-weight: 500; */
   transform: translateX(150px); /* Move text slightly right */
+}
+
+/* Village temp 2 */
+.villagetemp2 {
+  font-family: 'noto sans' ;
+  font-size: 29px;
+  /* font-weight: 500; */
+  transform: translateX(180px); /* Move text slightly right */
+}
+
+/* samurai temp 2 */
+.samuraitemp2 {
+  font-family: 'noto sans' ;
+  font-size: 29px;
+  /* font-weight: 500; */
+  transform: translateX(185px); /* Move text slightly right */
 }
 
 .section-line {
@@ -809,6 +976,533 @@ body {
     color: #FDCB58;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
+
+/* village image text */
+.villageimgtext2 h1{
+    position:relative;
+    bottom:-210px;
+    left: -500px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.villageimgtext3 h1{
+    position:relative;
+    bottom:-210px;
+    left: -610px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.villageimgtext4 h1{
+    position:relative;
+    bottom:-210px;
+    left: -480px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.villageimgtext5 h1{
+    position:relative;
+    bottom:-210px;
+    left: -520px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.villageimgtext6 h1{
+    position:relative;
+    bottom:-210px;
+    left: -400px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* street market - image text */
+.streetimgtext2 h1{
+    position:relative;
+    bottom:-210px;
+    left: -400px;
+    font-size: 45px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.streetimgtext2 p{
+    position:relative;
+    bottom: -180px;
+    left:-400px;
+    font-family: 'noto sans' ;
+    font-size: 40px;
+    font-weight: 500;   
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.streetimgtext3 h1{
+    position:relative;
+    bottom:-210px;
+    left: -400px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.streetimgtext3 p{
+    position:relative;
+    bottom: -180px;
+    left:-390px;
+    font-family: 'noto sans' ;
+    font-size: 40px;
+    font-weight: 500;   
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.streetimgtext4 h1{
+    position:relative;
+    bottom:-210px;
+    left: -400px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.streetimgtext4 p{
+    position:relative;
+    bottom: -180px;
+    left:-390px;
+    font-family: 'noto sans' ;
+    font-size: 40px;
+    font-weight: 500;   
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.streetimgtext5 h1{
+    position:relative;
+    bottom:-210px;
+    left: -400px;
+    font-size: 45px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.streetimgtext5 p{
+    position:relative;
+    bottom: -180px;
+    left:-400px;
+    font-family: 'noto sans' ;
+    font-size: 40px;
+    font-weight: 500;   
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.streetimgtext6 h1{
+    position:relative;
+    bottom:-210px;
+    left: -400px;
+    font-size: 40px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.streetimgtext6 p{
+    position:relative;
+    bottom: -180px;
+    left:-395px;
+    font-family: 'noto sans' ;
+    font-size: 40px;
+    font-weight: 500;   
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* onsenimgtext */
+
+.onsenimgtext3 h1{
+    position:relative;
+    bottom:-210px;
+    left: -400px;
+    font-size: 55px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.onsenimgtext6 h1{
+    position:relative;
+    bottom:-210px;
+    left: -400px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* samurai img text */
+.samuraiimgtext1 h1{
+    position:relative;
+    bottom:-210px;
+    left: -390px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.samuraiimgtext2 p{
+    position:relative;
+    bottom: -180px;
+    left:-385px;
+    font-family: 'noto sans' ;
+    font-size: 40px;
+    font-weight: 500;   
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.samuraiimgtext2 h1{
+    position:relative;
+    bottom:-210px;
+    left: -390px;
+    font-size: 38px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.samuraiimgtext3 h1{
+    position:relative;
+    bottom:-210px;
+    left: -390px;
+    font-size: 29px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.samuraiimgtext3 p{
+    position:relative;
+    bottom: -189px;
+    left:-390px;
+    font-family: 'noto sans' ;
+    font-size: 25px;
+    font-weight: 500;   
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.samuraiimgtext4 h1{
+    position:relative;
+    bottom:-210px;
+    left: -390px;
+    font-size: 37px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.samuraiimgtext4 p{
+    position:relative;
+    bottom: -189px;
+    left:-385px;
+    font-family: 'noto sans' ;
+    font-size: 30px;
+    font-weight: 500;   
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.samuraiimgtext5 h1{
+    position:relative;
+    bottom:-210px;
+    left: -390px;
+    font-size: 50px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.samuraiimgtext6 h1{
+    position:relative;
+    bottom:-210px;
+    left: -390px;
+    font-size: 42px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.historyimgtext1 h1{
+    position:relative;
+    bottom:-210px;
+    left: -440px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.historyimgtext1 p{
+    position:relative;
+    bottom:-210px;
+    left: -440px;
+    font-size: 35px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.historyimgtext2 h1{
+    position:relative;
+    bottom:-210px;
+    left: -460px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.historyimgtext2 p{
+    position:relative;
+    bottom:-210px;
+    left: -450px;
+    font-size: 35px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.historyimgtext3 h1{
+    position:relative;
+    bottom:-210px;
+    left: -460px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.historyimgtext3 p{
+    position:relative;
+    bottom:-210px;
+    left: -450px;
+    font-size: 35px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.historyimgtext4 h1{
+    position:relative;
+    bottom:-210px;
+    left: -380px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.historyimgtext4 p{
+    position:relative;
+    bottom:-210px;
+    left: -370px;
+    font-size: 35px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.historyimgtext5 h1{
+    position:relative;
+    bottom:-210px;
+    left: -490px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.historyimgtext5 p{
+    position:relative;
+    bottom:-210px;
+    left: -480px;
+    font-size: 35px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.historyimgtext6 h1{
+    position:relative;
+    bottom:-210px;
+    left: -380px;
+    font-size: 30px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.historyimgtext6 p{
+    position:relative;
+    bottom:-210px;
+    left: -380px;
+    font-size: 20px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mythimgtext1 h1{
+    position:relative;
+    bottom:-210px;
+    left: -500px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mythimgtext2 h1{
+    position:relative;
+    bottom:-210px;
+    left: -540px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mythimgtext3 h1{
+    position:relative;
+    bottom:-210px;
+    left: -490px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mythimgtext4 h1{
+    position:relative;
+    bottom:-210px;
+    left: -330px;
+    font-size: 65px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mythimgtext5 h1{
+    position:relative;
+    bottom:-210px;
+    left: -420px;
+    font-size: 55px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.mythimgtext6 h1{
+    position:relative;
+    bottom:-210px;
+    left: -560px;
+    font-size: 60px;
+    font-family: 'Noto Serif JP';
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    color: #FDCB58;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+
 
 .discr{
   background-color: rgba(0, 0, 0, 0.5);
